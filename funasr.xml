@@ -1,0 +1,10 @@
+<configuration name="funasr.conf" description="mod_fun_asr configuration">
+    <settings>
+	    <!-- 注意ws不支持wss地址,为了效率考虑直接使用ws -->
+        <param name="wsUrl" value=""/>
+		<!-- 热词 :后面是权重 注意&quot;是转义"字符串 -->
+		<param name="hotWords" value="{&quot;阿里巴巴&quot;:20,&quot;通义实验室&quot;:30}"/>
+		<!-- 推送asr识别结果到接口 -->
+        <param name="pushUrl" value=""/>
+    </settings>
+</configuration>
