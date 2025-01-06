@@ -2,7 +2,7 @@
 
 **很多人都对FreeSWITCH和ASR对接比较感谢兴趣，这里提供FunAsr mod模块直接对接阿里开源的FunAsr语音Asr识别模型，大家可以基于此模块实现检测早期媒体音,实现手机号空号识别+各种前期手机号异常状态功能**
 
-mod_fun_asr.so是模块主程序，该模块需要授权，授权价格3K，模块一次性永久授权，包售后。如有其他定制化模块需求，请加微信或进入https://www.callwg.com/ 了解更多详情。
+mod_fun_asr.so是模块主程序，该模块需要授权，授权价格3K，模块一次性永久授权，包售后,可开发票。如有其他定制化模块需求，请加微信或进入https://www.callwg.com/ 了解更多详情。
 
 ![](https://www.callwg.com/templets/callgw/images/ma.png)
 
@@ -40,7 +40,7 @@ originate {origination_caller_id_name=955555,origination_caller_id_number=955555
 
 ## `mod_fun_asr模块事件结果`
 
-1.上面的命令执行成功以后，会不断地生成Asr识别的结果，分别通过Post json到接口或Esl事件方式通知。
+1.上面的命令执行成功以后，会不断地生成Asr识别的结果，分别通过Http Post json到业务接口或Esl事件方式通知,可以二选一方式。
 
 Esl事件如下：
 
@@ -57,7 +57,7 @@ FreeSWITCH-IPv6: ::1
 Event-Date-Local: 2017-12-10 11:30:32
 Event-Date-GMT: Sun, 10 Dec 2017 03:30:32 GMT
 Event-Date-Timestamp: 1512876632835590
-Event-Calling-File: mod_asr.cpp
+Event-Calling-File: mod_fun_asr.cpp
 Event-Calling-Function: OnResultDataRecved
 Event-Calling-Line-Number: 55
 Event-Sequence: 914
@@ -80,7 +80,7 @@ FreeSWITCH-IPv6: ::1
 Event-Date-Local: 2017-12-10 11:30:32
 Event-Date-GMT: Sun, 10 Dec 2017 03:30:32 GMT
 Event-Date-Timestamp: 1512876632835590
-Event-Calling-File: mod_asr.cpp
+Event-Calling-File: mod_fun_asr.cpp
 Event-Calling-Function: OnResultDataRecved
 Event-Calling-Line-Number: 55
 Event-Sequence: 914
