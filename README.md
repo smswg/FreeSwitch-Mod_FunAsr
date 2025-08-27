@@ -3,6 +3,7 @@
 **很多人都对FreeSWITCH和ASR对接比较感谢兴趣，这里提供FunAsr mod模块直接对接阿里开源的FunAsr语音Asr识别模型，大家可以基于此模块实现检测早期媒体音,实现手机号空号识别+各种前期手机号异常状态功能**
 
 mod_fun_asr.so是模块主程序，该模块需要授权，授权价格3K，模块一次性永久授权，包售后,可开发票。如有其他定制化模块需求，请加微信或进入https://www.callwg.com/ 了解更多详情。
+如果您需要神经网络算法实现检测振铃音的无需ASR大模型，可以访问https://github.com/smswg/freeswitch-Mod_CheckPhon来这个仓库看一下,或加客服了解。
 
 ![](https://www.callwg.com/templets/callgw/images/ma.png)
 
